@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Making Sense: Foundation Models for Multisensory Intelligence (AAAI-27 Workshop)</title>
+  <meta name="description" content="Making Sense is an AAAI-27 workshop on how foundation models for multisensory intelligence should be built, evaluated and trusted, bringing together the health-sensing, ubiquitous-computing, audio, robotics, industrial and time-series communities.">
+  <link rel="canonical" href="https://making-sense-workshop.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://making-sense-workshop.github.io/">
+  <meta property="og:title" content="Making Sense: Foundation Models for Multisensory Intelligence">
+  <meta property="og:description" content="An AAAI-27 workshop on foundation models for sensor data and multisensory intelligence.">
+  <meta name="theme-color" content="#F7F8FA" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F1620" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..800&family=Source+Serif+4:opsz,wght@8..60,400..600&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/signals.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="site-nav" aria-label="Sections">
+    <div class="wrap">
+      <a class="brand" href="#top">Making Sense <span>AAAI-27</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#topics">Topics</a></li>
+        <li><a href="#call">Call for papers</a></li>
+        <li><a href="#dates">Dates</a></li>
+        <li><a href="#format">Format</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap">
+      <h1>Making Sense</h1>
+      <p class="subtitle">Foundation models for multisensory intelligence</p>
+      <p class="hero-meta">A one-day workshop at AAAI-27<br>Date and room to be announced</p>
+      <div class="actions">
+        <a class="btn" href="#call">Read the call for papers</a>
+        <a class="text-link" href="#dates">See key dates</a>
+      </div>
+    </div>
+    <figure class="scope" role="img" aria-label="Six sensor streams, PPG, ECG, EEG, accelerometer, microphone and pressure, turning from raw noise on the left into clean, labeled signals on the right."></figure>
+    <div class="wrap scope-controls">
+      <button class="scope-toggle" type="button" aria-pressed="false" hidden>Pause signals</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap section-grid">
+        <h2 id="about-title">About</h2>
+        <div class="prose">
+          <p>Foundation models are reaching the senses. Wearables stream heart rhythms, motion and sleep from hundreds of millions of wrists. Microphones and earables capture speech, breathing and coughs. Tactile and olfactory sensors let robots and assistants feel and smell. Factories, vehicles and grids emit continuous telemetry. Sensor foundation models are now deployed to millions of users. Yet they are built in silos, one per application community, and the questions that decide whether multisensory intelligence works remain open.</p>
+          <p>How should heterogeneous sensors be aligned with language? How should missing data and device heterogeneity be handled at scale? Which sensors carry unique or synergistic information? Do sensor models reason or merely recognize? How can they be deployed safely on the body?</p>
+          <p>Making Sense brings the health-sensing, ubiquitous-computing, audio, robotics, industrial and time-series communities together at AAAI to establish how foundation models for multisensory intelligence should be built, evaluated and trusted.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="topics" aria-labelledby="topics-title">
+      <div class="wrap section-grid">
+        <h2 id="topics-title">Topics</h2>
+        <div>
+          <p class="lead">Topics of interest include, but are not limited to:</p>
+          <ul class="topics">
+            <li>Wearable and biosignal foundation models (PPG, ECG, EEG, EMG)</li>
+            <li>Sensor-language models and reasoning agents</li>
+            <li>Tokenization and pretraining for heterogeneous sensors</li>
+            <li>Missing modalities, irregular sampling and device heterogeneity</li>
+            <li>Audio, tactile, olfactory and embodied sensing</li>
+            <li>Egocentric, ambient and industrial telemetry sensing</li>
+            <li>Multisensory fusion and transfer across speech, vision and sensor models</li>
+            <li>Benchmarks, datasets and evaluation of sensor reasoning</li>
+            <li>On-device, efficient, cost-aware and dynamic sensing</li>
+            <li>Personal-health agents, clinical validation, privacy and safety on the body</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="call" aria-labelledby="call-title">
+      <div class="wrap section-grid">
+        <h2 id="call-title">Call for papers</h2>
+        <div>
+          <p class="lead">Submissions use the AAAI-27 template and are reviewed double-blind, so please anonymize your paper. We accept two kinds of paper.</p>
+          <div class="tracks">
+            <div class="track">
+              <h3>Research papers</h3>
+              <p>Novel methods, theory or experiments. Eligible for the Best Paper Award.</p>
+            </div>
+            <div class="track">
+              <h3>Demo and dataset papers</h3>
+              <p>New datasets, benchmarks or demonstrable systems. Eligible for the Best Demo or Dataset Award.</p>
+            </div>
+          </div>
+          <dl class="facts">
+            <div><dt>Long papers</dt><dd>Up to 7 pages of technical content</dd></div>
+            <div><dt>Short papers</dt><dd>Up to 4 pages of technical content</dd></div>
+            <div><dt>References and appendices</dt><dd>Unlimited pages, for both lengths</dd></div>
+            <div><dt>Supplementary material</dt><dd>Allowed, but reviewers are not required to review it</dd></div>
+            <div><dt>Awards</dt><dd>Judged on the quality of the work, regardless of page length</dd></div>
+          </dl>
+          <p class="notice">The submission link will be posted here when submissions open.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="dates" aria-labelledby="dates-title">
+      <div class="wrap section-grid">
+        <h2 id="dates-title">Key dates</h2>
+        <ol class="timeline">
+          <li><span class="what">Paper submission deadline</span><span class="when">To be announced</span></li>
+          <li><span class="what">Author notification</span><span class="when">To be announced</span></li>
+          <li><span class="what">Camera-ready deadline</span><span class="when">To be announced</span></li>
+          <li><span class="what">Workshop at AAAI-27</span><span class="when">To be announced</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="format" aria-labelledby="format-title">
+      <div class="wrap section-grid">
+        <h2 id="format-title">Format</h2>
+        <div class="prose">
+          <p>The workshop runs for one day, with keynote talks, oral presentations, poster sessions, live demos, an industry session and a panel discussion. Speakers and the full schedule will be posted here.</p>
+          <h3>Attending</h3>
+          <p>There are no criteria to attend beyond AAAI-27 registration. Anyone interested in foundation models for sensor data and multisensory intelligence is welcome. The number of attendees depends on the size of the room.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="organizers" aria-labelledby="organizers-title">
+      <div class="wrap section-grid">
+        <h2 id="organizers-title">Organizers</h2>
+        <div>
+          <h3 class="group-title">Workshop chairs</h3>
+          <ul class="people">
+            <li><span class="name">Yaxuan Kong</span><span class="aff">University of Oxford</span></li>
+            <li><span class="name">Qingsong Wen</span><span class="aff">Squirrel Ai Learning</span></li>
+          </ul>
+          <h3 class="group-title">Organizing committee</h3>
+          <ul class="people">
+            <li><span class="name">Chaoli Zhang</span><span class="aff">Zhejiang Normal University</span></li>
+            <li><span class="name">Ming Jin</span><span class="aff">Griffith University</span></li>
+            <li><span class="name">Zhiguang (Stephen) Wang</span><span class="aff">Abel Lab</span></li>
+            <li><span class="name">Patrick Langer</span><span class="aff">Aionic Labs, ETH Zurich and Stanford University</span></li>
+          </ul>
+          <p class="contact">Questions about the workshop? Email <a href="mailto:yaxuan.kong@eng.ox.ac.uk">yaxuan.kong@eng.ox.ac.uk</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Making Sense: Foundation Models for Multisensory Intelligence, a workshop at AAAI-27.</p>
+      <p><a href="https://github.com/making-sense-workshop/making-sense-workshop.github.io">Site source on GitHub</a></p>
+    </div>
+  </footer>
+</body>
+</html>
