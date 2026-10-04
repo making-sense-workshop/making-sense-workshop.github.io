@@ -6,7 +6,7 @@ Website for the Making Sense workshop at AAAI-27: https://making-sense-workshop.
 
 The site is plain HTML and CSS with no build step.
 
-- `index.html` holds all the content. Dates, the submission link, speakers and the schedule are marked "To be announced" until they are confirmed.
+- `index.html` holds all the content. Submission dates and the submission link are marked "To be announced" until they are confirmed. The speakers section shows placeholder cards, and the program is the tentative schedule without speaker names.
 - `assets/style.css` holds the styles. Colors are defined once at the top, with a dark-mode set below them.
 - `assets/signals.js` draws the sensor streams in the header.
 
