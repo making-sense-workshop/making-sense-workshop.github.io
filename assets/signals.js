@@ -7,8 +7,8 @@
   const SVG_NS = "http://www.w3.org/2000/svg";
   const TAU = Math.PI * 2;
   const PX_PER_SECOND = 170; // horizontal scale of signal time
-  const SPEED = 0.4; // signal seconds per real second
-  const STEP = 1.5; // px between samples
+  const SPEED = 0.3; // signal seconds per real second
+  const STEP = 1; // px between samples
   const TOP = 10; // headroom so the first channel label isn't clipped
 
   const frac = (x) => x - Math.floor(x);
@@ -160,12 +160,16 @@
   }
 
   function draw() {
+    // Move the signal in whole-sample steps. Each frame is then an exact shift of
+    // the last one, so the noisy part scrolls instead of shimmering in place.
+    const sampleTime = STEP / PX_PER_SECOND;
+    const tq = Math.round(t / sampleTime) * sampleTime;
     const amplitude = rowHeight * 0.34;
     channels.forEach((channel, i) => {
       const center = TOP + rowHeight * (i + 0.5);
       let d = "";
       for (let x = 0; x <= width; x += STEP) {
-        const u = t + x / PX_PER_SECOND;
+        const u = tq + x / PX_PER_SECOND;
         const rawness = 1 - smooth(0.22, 0.6, x / width);
         const jitter = 0.75 * (noise(u * 22, i * 131 + 1) + 0.5 * noise(u * 57, i * 131 + 2));
         const value = Math.max(-1.25, Math.min(1.25, channel.signal(u) + jitter * rawness));
