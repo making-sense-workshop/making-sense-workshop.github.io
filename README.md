@@ -6,7 +6,7 @@ Website for the Making Sense workshop at AAAI-27: https://making-sense-workshop.
 
 The site is plain HTML, CSS and a little JavaScript, with no build step.
 
-- `index.html` holds all the content. Submission dates and the submission link are marked "To be announced" until they are confirmed. The speakers section shows placeholder cards, and the program is the tentative half-day schedule (14:00–18:00) without speaker names. The program committee section's "Join the Program Committee" button emails the workshop chair until an application form exists. The call for sponsors lists opportunities without prices or tiers; inquiries go to the workshop chair.
+- `index.html` holds all the content. Submissions are open on OpenReview (https://openreview.net/group?id=AAAI.org/2027/Workshop/MakingSense); the link appears in the header, the hero and the call for papers. The camera-ready date and the final workshop day are still "To be announced". The speakers section shows placeholder cards, and the program is the tentative half-day schedule (14:00–18:00) without speaker names. The program committee section's "Join the Program Committee" button emails the workshop chair until an application form exists. The call for sponsors lists opportunities without prices or tiers; inquiries go to the workshop chair.
 - `assets/style.css` holds the styles. Colors are defined once at the top, with a dark-mode set below them. Fonts are DM Serif Display, Manrope and DM Mono from Google Fonts.
 - `assets/signals.js` draws the sensor streams in the hero.
 - `assets/script.js` runs the mobile menu and highlights the section in view.
