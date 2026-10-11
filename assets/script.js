@@ -4,7 +4,7 @@
 // mobile menu and highlights the section currently in view.
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector("#primary-nav");
-const mobileNavigation = window.matchMedia("(max-width: 1180px)");
+const mobileNavigation = window.matchMedia("(max-width: 1260px)");
 
 function setMenu(open) {
   menuButton.setAttribute("aria-expanded", String(open));

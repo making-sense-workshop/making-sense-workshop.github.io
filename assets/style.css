@@ -779,6 +779,60 @@ h3 {
   font-weight: 500;
 }
 
+/* Submission block at the end of the call for papers. */
+.submit {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px 56px;
+  align-items: center;
+  margin-top: 56px;
+  padding: 32px 36px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--surface);
+}
+
+.submit .section-index {
+  margin-bottom: 14px;
+}
+
+.submit h3 {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.submit h3 + p {
+  max-width: 56ch;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.submit-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.submit-url {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.submit-url:hover {
+  color: var(--ink);
+  text-decoration-color: currentColor;
+}
+
 /* Program (dark band) */
 
 .band {
@@ -1172,7 +1226,7 @@ h3 {
   }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1260px) {
   .header-inner {
     min-height: 66px;
     gap: 10px;
@@ -1245,6 +1299,10 @@ h3 {
 }
 
 @media (max-width: 960px) {
+  .submit {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .hero-body,
   .overview {
     grid-template-columns: minmax(0, 1fr);
@@ -1324,7 +1382,7 @@ h3 {
     font-size: 1.25rem;
   }
 
-  /* On phones the call for papers moves into the menu; Join PC stays visible. */
+  /* On phones the Submit button moves into the menu; Join PC stays visible. */
   .header-action:not(.header-action-light) {
     display: none;
   }
