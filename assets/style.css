@@ -859,7 +859,6 @@ h3 {
 }
 
 .faq-list details p {
-  max-width: 72ch;
   margin: 0 0 18px;
   color: var(--muted);
   font-size: 0.9375rem;
@@ -1263,7 +1262,7 @@ h3 {
   }
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1320px) {
   .header-inner {
     min-height: 66px;
     gap: 10px;
